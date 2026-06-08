@@ -1,27 +1,47 @@
-"  IN THE NAME OF ALLAH  "
+# IN THE NAME OF ALLAH
 
-# weather-prediction-BOM
-Machine Learning project for weather forecasting using the BOM dataset.
+# 🌦️ Weather Prediction using BOM Dataset
 
-This project applies Machine Learning techniques to predict weather conditions using the Australian Bureau of Meteorology (BOM) dataset.
+## Overview
 
-## Features
+This project focuses on weather prediction using the  BOM dataset. Two machine learning algorithms were implemented and evaluated:
 
-- Data Cleaning
-- Feature Engineering
-- Model Training
-- Model Evaluation
-- Weather Prediction
+* K-Nearest Neighbors (KNN)
+* Decision Tree
 
-## Technologies
+## Model Comparison
 
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Seaborn
+Both models were trained and tested on the same dataset to compare their performance and prediction capabilities.
+
+### K-Nearest Neighbors (KNN)
+
+* Simple and effective classification algorithm.
+* Requires calculating distances to training samples during prediction.
+* Prediction time increases as the dataset grows.
+
+### Decision Tree
+
+* Fast prediction speed after training.
+* Efficient for real-time inference and deployment scenarios.
+* Easier to interpret and visualize compared to KNN.
 
 ## Results
 
-Achieved competitive performance on weather forecasting tasks using supervised machine learning models.
+Experimental results showed that the Decision Tree model achieved significantly faster prediction times than the KNN model. Due to its lower inference latency, the Decision Tree is a more suitable choice for real-time weather prediction applications.
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* Matplotlib
+* Jupyter Notebook
+
+
+## Future Work
+
+* Hyperparameter optimization
+* Ensemble learning methods
+* Model deployment with Flask/FastAPI
+* Real-time weather prediction API
